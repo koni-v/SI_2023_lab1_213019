@@ -1,0 +1,37 @@
+commit bd3a12dd5ba6e91c0f20ff45cefdb2ac4063c52f (HEAD -> master, origin/bug3, bug3)
+Author: koni-v <k.vidovic.mk@gmail.com>
+Date:   Wed Apr 5 12:29:23 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit c34af11eb03c0382d84e439b59103a699a84a3fe (origin/master)
+Merge: b1d5dee c1be6d3
+Author: koni-v <k.vidovic.mk@gmail.com>
+Date:   Wed Apr 5 16:06:39 2023 +0200
+
+    Merge branch 'bug2'
+
+commit c1be6d3e4bc0b4c8f9dcd284a66114f8d1a9cfb7 (origin/bug2, bug2)
+Author: koni-v <k.vidovic.mk@gmail.com>
+Date:   Wed Apr 5 12:25:01 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit b1d5dee6ba797cc1b5d2d12265d0d641d4a56eae (origin/bug1, bug1)
+Author: koni-v <k.vidovic.mk@gmail.com>
+Date:   Wed Apr 5 12:10:04 2023 +0200
+
+    Fix wrong loop for reading
+
+commit 28376687a6e35d7f28a749aa4804a9e4e096fbbe
+Author: koni-v <k.vidovic.mk@gmail.com>
+Date:   Wed Apr 5 11:30:28 2023 +0200
+
+    Add java class
+
+commit d59cff1a6a630661a70176fbd31a5705fb3c8fba
+Author: koni-v <k.vidovic.mk@gmail.com>
+Date:   Wed Apr 5 11:26:23 2023 +0200
+
+    Initial commit
+(END)

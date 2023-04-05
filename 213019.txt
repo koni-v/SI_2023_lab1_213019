@@ -1,0 +1,238 @@
+4. git init
+   C:\Users\Administrator\Desktop\SI_2023_lab1_213019>git init
+   Initialized empty Git repository in C:/Users/Administrator/Desktop/SI_2023_lab1_213019/.git/
+5. git remote add origin https://github.com/koni-v/SI_2023_lab1_213019.git
+   C:\Users\Administrator\Desktop\SI_2023_lab1_213019>git remote add origin https://github.com/koni-v/SI_2023_lab1_213019.git
+6. nano README.md --> git add README.md --> git commit -m "Initial commit"
+   Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+   $ nano README.md
+
+   Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+   $ git add README.md
+   warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+   Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+   $ git commit -m "Initial commit"
+   [master (root-commit) d59cff1] Initial commit
+    1 file changed, 1 insertion(+)
+    create mode 100644 README.md
+7. nano SILab1.java--> git add README.md --> git commit -m "Add java class"
+   Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+   $ nano SILab1.java
+
+   Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+   $ git add SILab1.java
+   warning: in the working copy of 'SILab1.java', LF will be replaced by CRLF the next time Git touches it
+
+   Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+   $ git commit -m "Add java class"
+   [master 2837668] Add java class
+    1 file changed, 41 insertions(+)
+    create mode 100644 SILab1.java
+8. git push -u origin master
+   Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+   $ git push -u origin master
+   Enumerating objects: 6, done.
+   Counting objects: 100% (6/6), done.
+   Delta compression using up to 4 threads
+   Compressing objects: 100% (4/4), done.
+   Writing objects: 100% (6/6), 824 bytes | 412.00 KiB/s, done.
+   Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+   To https://github.com/koni-v/SI_2023_lab1_213019.git
+    * [new branch]      master -> master
+   branch 'master' set up to track 'origin/master'.
+9. git branch bug1 --> git branch bug2 --> git branch bug3
+   Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+   $ git branch bug1
+
+   Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+   $ git branch bug2
+
+   Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+   $ git branch bug3
+10. git checkout bug1
+   Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+   $ git checkout bug1
+   Switched to branch 'bug1'
+11. nano SILab1.java (greska: <= --> <) --> git add SILab1 --> git commit -m "Fix wrong loop for reading"
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (bug1)
+    $ nano SILab1.java
+
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (bug1)
+    $ git add SILab1.java
+    warning: in the working copy of 'SILab1.java', LF will be replaced by CRLF the next time Git touches it
+
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (bug1)
+    $ git commit -m "Fix wrong loop for reading"
+    [bug1 b1d5dee] Fix wrong loop for reading
+    1 file changed, 1 insertion(+), 1 deletion(-)
+12. git checkout bug2
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (bug1)
+    $ git checkout bug2
+    Switched to branch 'bug2'
+13. nano SILab1.java (greska: == --> !=)--> git add SILab1 --> git commit -m "Fix wrong condition in filterOddNumbers"
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (bug2)
+    $ nano SILab1.java
+
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (bug2)
+    $ git add SILab1.java
+
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (bug2)
+    $ git commit -m "Fix wrong condition in filterOddNumbers"
+    [bug2 c1be6d3] Fix wrong condition in filterOddNumbers
+    1 file changed, 1 insertion(+), 1 deletion(-)
+
+14. git checkout bug3
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (bug2)
+    $ git checkout bug3
+    Switched to branch 'bug3'
+
+15. nano SILab1.java (greska: sum=1 --> sum=0) && (greska: *= --> +=)--> git add SILab1 --> git commit -m "Fix method sumEvenNumbers"
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (bug3)
+    $ nano SILab1.java
+
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (bug3)
+    $ git add SILab1.java
+
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (bug3)
+    $ git commit -m "Fix method sumEvenNumbers"
+    [bug3 066bfc2] Fix method sumEvenNumbers
+     1 file changed, 2 insertions(+), 2 deletions(-)
+16. git push -u origin master bug1 bug2 bug3
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+    $ git push -u origin master bug1 bug2 bug3
+    Enumerating objects: 11, done.
+    Counting objects: 100% (11/11), done.
+    Delta compression using up to 4 threads
+    Compressing objects: 100% (9/9), done.
+    Writing objects: 100% (9/9), 878 bytes | 219.00 KiB/s, done.
+    Total 9 (delta 4), reused 0 (delta 0), pack-reused 0
+    remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+    To https://github.com/koni-v/SI_2023_lab1_213019.git
+      * [new branch]      bug1 -> bug1
+      * [new branch]      bug2 -> bug2
+      * [new branch]      bug3 -> bug3
+    branch 'master' set up to track 'origin/master'.
+    branch 'bug1' set up to track 'origin/bug1'.
+    branch 'bug2' set up to track 'origin/bug2'.
+    branch 'bug3' set up to track 'origin/bug3'.
+17. git checkout master
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (bug3)
+    $ git checkout master
+    Switched to branch 'master'
+    Your branch is up to date with 'origin/master'
+18. git merge bug1
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+    $ git merge bug1
+    Updating 2837668..b1d5dee
+    Fast-forward
+     SILab1.java | 2 +-
+     1 file changed, 1 insertion(+), 1 deletion(-)
+19. git push -u origin master
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+    $ git push -u origin master
+    Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+    To https://github.com/koni-v/SI_2023_lab1_213019.git
+       2837668..b1d5dee  master -> master
+    branch 'master' set up to track 'origin/master'.
+20. git merge bug2
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+    $ git merge bug2
+    Auto-merging SILab1.java
+    Merge made by the 'ort' strategy.
+     SILab1.java | 2 +-
+     1 file changed, 1 insertion(+), 1 deletion(-)
+21. git push -u origin master
+Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 354 bytes | 354.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/koni-v/SI_2023_lab1_213019.git
+   b1d5dee..c34af11  master -> master
+branch 'master' set up to track 'origin/master'.
+22. git checkout bug3
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+    $ git checkout bug3
+    Switched to branch 'bug3'
+    Your branch is up to date with 'origin/bug3'.
+23. git rebase master
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (bug3)
+    $ git rebase master
+    Successfully rebased and updated refs/heads/bug3.
+24. git checkout master
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (bug3)
+    $ git checkout master
+    Switched to branch 'master'
+    Your branch is up to date with 'origin/master'.
+25. git merge bug3
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+    $ git merge bug3
+    Updating c34af11..bd3a12d
+    Fast-forward
+     SILab1.java | 4 ++--
+     1 file changed, 2 insertions(+), 2 deletions(-)
+26. git push --force origin bug3
+    Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+    $ git push --force origin bug3
+    Enumerating objects: 5, done.
+    Counting objects: 100% (5/5), done.
+    Delta compression using up to 4 threads
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (3/3), 346 bytes | 346.00 KiB/s, done.
+    Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    To https://github.com/koni-v/SI_2023_lab1_213019.git
+     + 066bfc2...bd3a12d bug3 -> bug3 (forced update)
+27. git log
+
+Koni Vidovic@DESKTOP-9RRSD5S MINGW64 ~/Desktop/SI_2023_lab1_213019 (master)
+$ git log --> nano logs.txt
+commit bd3a12dd5ba6e91c0f20ff45cefdb2ac4063c52f (HEAD -> master, origin/bug3, bug3)
+Author: koni-v <k.vidovic.mk@gmail.com>
+Date:   Wed Apr 5 12:29:23 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit c34af11eb03c0382d84e439b59103a699a84a3fe (origin/master)
+Merge: b1d5dee c1be6d3
+Author: koni-v <k.vidovic.mk@gmail.com>
+Date:   Wed Apr 5 16:06:39 2023 +0200
+
+    Merge branch 'bug2'
+
+commit c1be6d3e4bc0b4c8f9dcd284a66114f8d1a9cfb7 (origin/bug2, bug2)
+Author: koni-v <k.vidovic.mk@gmail.com>
+Date:   Wed Apr 5 12:25:01 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit b1d5dee6ba797cc1b5d2d12265d0d641d4a56eae (origin/bug1, bug1)
+Author: koni-v <k.vidovic.mk@gmail.com>
+Date:   Wed Apr 5 12:10:04 2023 +0200
+
+    Fix wrong loop for reading
+
+commit 28376687a6e35d7f28a749aa4804a9e4e096fbbe
+Author: koni-v <k.vidovic.mk@gmail.com>
+Date:   Wed Apr 5 11:30:28 2023 +0200
+
+    Add java class
+
+commit d59cff1a6a630661a70176fbd31a5705fb3c8fba
+Author: koni-v <k.vidovic.mk@gmail.com>
+Date:   Wed Apr 5 11:26:23 2023 +0200
+
+    Initial commit
+(END)
+
+
+
+
+
+
+
